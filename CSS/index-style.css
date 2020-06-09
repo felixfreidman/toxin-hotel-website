@@ -1,0 +1,174 @@
+/*  start header-section */
+
+.header {
+    width: 1440px;
+    max-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.header_logo {
+    max-width: 106px;
+    max-height: 40px;
+    margin: 15px 0px 15px 140px;
+}
+
+nav {
+    margin: 26px auto 23px auto;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.nav_arrow {
+    max-width: 24px;
+    max-height: 21px;
+}
+
+.header_signin {
+    color: #BC9CFF;
+    border: 3px solid #BC9CFF;
+    border-radius: 22px;
+    padding: 9px 20px 10px 20px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    max-width: 87px;
+    max-height: 34px;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.header_signup {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    max-width: 196px;
+    max-height: 34px;
+    padding: 9px 20px 10px 19px;
+    margin-right: 140px;
+}
+
+/* end header-section */
+
+/* start main-section */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    height: 900px;
+    background: url("/IMG/index-backgroundimage.png");
+}
+
+.main-bottom_text {
+    align-self: flex-end;
+    margin-left: auto;
+    margin-bottom: 18px;
+    margin-right: 117px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+/* end main-section */
+/* start footer-section */
+/* start footer-info */
+.footer {
+    max-width: 1440px;
+    height: 443px;
+}
+/* We need this to flex the "table" */
+.footer-info {
+    max-width: 1440px;
+    height: 372px;
+    margin-bottom: 1px;
+    padding-top: 104px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.footer-copyrights {
+    max-width: 1440px;
+    height: 70px;
+}
+/* Another Hotel Toxin */
+.footer_logo {
+    max-width: 106px;
+    max-height: 40px;
+}
+/* Cells that have different styles */
+.footer-info_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    text-align: left;
+    margin-top: 21px;
+}
+/* Flexing inside each column of the "table" */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 57px;
+}
+
+/* Header of "Table"'s column */
+.footer-column_header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+/* Each cell in "Table" */
+.footer-column_row {
+    margin-top: 21px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+}
+/* Input in the last cell of "Table" to subscribe on emails(Just Decorative) */
+.footer-info_input {
+    background: url("../IMG/index-input_email-arrow.png") no-repeat 95% 50%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 260px;
+    max-height: 44px;
+    color: rgba(31, 32, 65, 0.25);
+    padding: 12px 0px 12px 15px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* end footer-info */
+
+/* start footer-copyrights */
+/* end footer-copyrights */
+/* end footer-section */
