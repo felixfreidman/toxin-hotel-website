@@ -1,7 +1,8 @@
 /*  start header-section */
 
 .header {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     max-height: 70px;
     display: flex;
     align-items: center;
@@ -94,27 +95,31 @@ nav {
 /* start footer-info */
 .footer {
     max-width: 1440px;
-    height: 443px;
+    max-height: 343px;
+    padding-top: 104px;
 }
+
 /* We need this to flex the "table" */
 .footer-info {
     max-width: 1440px;
-    height: 372px;
+    height: 272px;
     margin-bottom: 1px;
-    padding-top: 104px;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
 }
+
 .footer-copyrights {
     max-width: 1440px;
     height: 70px;
 }
+
 /* Another Hotel Toxin */
 .footer_logo {
     max-width: 106px;
     max-height: 40px;
 }
+
 /* Cells that have different styles */
 .footer-info_text {
     font-style: normal;
@@ -125,6 +130,7 @@ nav {
     text-align: left;
     margin-top: 21px;
 }
+
 /* Flexing inside each column of the "table" */
 .footer-column {
     display: flex;
@@ -141,6 +147,7 @@ nav {
     text-transform: uppercase;
     color: #1F2041;
 }
+
 /* Each cell in "Table" */
 .footer-column_row {
     margin-top: 21px;
@@ -150,6 +157,7 @@ nav {
     line-height: 17px;
     color: rgba(31, 32, 65, 0.5);
 }
+
 /* Input in the last cell of "Table" to subscribe on emails(Just Decorative) */
 .footer-info_input {
     background: url("../IMG/index-input_email-arrow.png") no-repeat 95% 50%;
@@ -170,6 +178,31 @@ nav {
 /* end footer-info */
 
 /* start footer-copyrights */
+
+.footer-copyrights {
+    border-top: 1px solid rgba(31, 32, 65, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 140px;
+    padding-left: 140px;
+}
+
+.footer-copyrights_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.75);
+    
+}
+
+.socnet {
+    margin-left: 20px;
+    max-width: 24px;
+    max-height: 24px;
+}
+
 /* end footer-copyrights */
 /* end footer-section */
 /* end css */
