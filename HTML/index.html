@@ -137,7 +137,41 @@
 
     <!-- Start Main Section with Calendar of Arrival -->
     <div class="main">
-      <div class="calendar"></div>
+      <div class="main-calendar">
+        <h4 class="calendar_header">
+          Найдём номера под<br />
+          ваши пожелания
+        </h4>
+        <div class="calendar-date-space">
+          <label for="arrivalDate">
+            Прибытие
+            <input
+              id="arrivalDate"
+              class="calendar-date"
+              placeholder="ДД.ММ.ГГГГ"
+            />
+          </label>
+          <label for="departureDate">
+            Выезд
+            <input
+              id="departureDate"
+              class="calendar-date"
+              placeholder="ДД.ММ.ГГГГ"
+            />
+          </label>
+        </div>
+        <label for="guestCount">
+          Гости
+          <input
+            id="guestCount"
+            class="calendar-guest_count"
+            placeholder="Сколько гостей"
+          />
+          <div class="main-calendar_findroom">
+            <span>Подобрать номер</span>
+          </div>
+        </label>
+      </div>
       <span class="main-bottom_text"
         >Лучшие номера для вашей работы,<br />
         отдыха и просто вдохновения</span
