@@ -71,8 +71,7 @@ nav {
 /* start main-section */
 .main {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     max-width: 1440px;
     height: 900px;
     width: 100%;
@@ -80,9 +79,21 @@ nav {
     background-size: cover;
 }
 
+.main_buttonclicked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    height: 900px;
+    width: 100%;
+    background: url("../IMG/index-background-signin.png");
+    background-size: cover;
+}
+
+
 .main-calendar {
     max-width: 380px;
-    max-height: 380px;
+    max-height: 374px;
     margin-top: 140px;
     margin-left: 140px;
     padding: 40px 30px 30px 30px;
@@ -105,11 +116,12 @@ nav {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 20px;
 }
 
 
 .calendar-date-space {
-    margin-top: 20px;
+
     display: flex;
     align-content: center;
     justify-content: center;
@@ -178,11 +190,115 @@ label {
     align-items: center;
     justify-content: center;
 }
+
 .main-calendar_findroom span {
     width: 280px;
     height: 15px;
     background: url("../IMG/index-calendar-findroom_arrow.svg") no-repeat 100% 50%;
 }
+
+
+/* start sign in window */
+.main-signin {
+    max-width: 380px;
+    max-height: 374px;
+    margin-top: 172px;
+    padding: 40px 30px 30px 30px;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.signin-close {
+    background: url("../IMG/close.svg") no-repeat 100% 100%;
+    color: rgba(0, 0, 0, 0);
+}
+
+.signin-close:hover {
+    fill: #BC9CFF;
+}
+
+.signin-data_input {
+    margin-bottom: 10px;
+    max-width: 320px;
+    max-height: 44px;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 13px 0px 13px 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.sign-data_submit {
+    background: url("../IMG/index-calendar-findroom_arrow.svg") no-repeat 95% 50%,
+        linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 320px;
+    max-height: 44px;
+    height: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.signin-signup_section {
+    display: flex;
+    align-items: center;
+}
+
+.signin-noaccount {
+    max-width: 164px;
+    max-height: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    margin-right: 57px;
+}
+
+.signup {
+    color: #BC9CFF;
+    border: 3px solid #BC9CFF;
+    border-radius: 22px;
+    padding: 9px 20px 10px 20px;
+    font-weight: bold;
+    max-width: 99px;
+    max-height: 34px;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #BC9CFF;
+
+
+}
+
+/* end sign in window */
 
 .main-bottom_text {
     align-self: flex-end;
@@ -313,4 +429,11 @@ label {
 
 /* end footer-copyrights */
 /* end footer-section */
+
+/* JS helping class */
+
+.hide {
+    display: none;
+}
+
 /* end css */
