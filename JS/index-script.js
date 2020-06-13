@@ -4,7 +4,7 @@ let signUpButton = document.querySelector('.header_signup');
 let mainBodyBottomText = document.querySelector('.main-bottom_text');
 let roomAndCalendar = document.querySelector('.main-calendar');
 let signInSection = document.querySelector('.main-signin');
-let cross = document.querySelector('.signin-close')
+let cross = document.querySelector('.window-close_cross')
 
 signInButton.addEventListener('click', () => {
     indexMainBody.classList.toggle('main');

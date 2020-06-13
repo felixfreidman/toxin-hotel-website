@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
     <link href="../CSS/index-style.css" type="text/css" rel="stylesheet" />
     <link href="../CSS/normalize.css" type="text/css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+    </style>
   </head>
   <body>
     <!-- This website is in development phase, it is not adopted for screens wider 1440px 
@@ -135,10 +144,11 @@
     </div>
     <!-- End Header with Navigation -->
 
-    <!-- Start Main Section with Calendar of Arrival -->
+    <!-- Start Main Section-->
     <div class="main">
-      <div class="main-calendar">
-        <h4 class="calendar_header">
+      <!-- start Calendar Section -->
+      <div class="main-calendar hide">
+        <h4 class="window_header">
           Найдём номера под<br />
           ваши пожелания
         </h4>
@@ -164,7 +174,7 @@
           Гости
           <input
             id="guestCount"
-            class="calendar-guest_count"
+            class="window-dropdown"
             placeholder="Сколько гостей"
           />
           <div class="main-calendar_findroom">
@@ -172,31 +182,90 @@
           </div>
         </label>
       </div>
-      <div class="main-signin hide">
-          <span class="signin-close">.</span>
-          <h4 class="calendar_header">Войти</h4>
-        <label for="index_signup_login">
+      <!-- finish Calendar Section -->
+
+      <!--  start Sign In section -->
+      <div class="main-window signin hide">
+        <span class="window-close_cross">.</span>
+        <h4 class="window_header">Войти</h4>
+        <input
+          type="text"
+          id="index_signup_login"
+          class="input_data"
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          id="index_signin_password"
+          class="input_data"
+          placeholder="Пароль"
+        />
+        <input type="submit" value="Войти" class="window-data_submit" />
+        <div class="window-unusualcase_section">
+          <span class="window-unusualcase_text">Нет аккаунта на Toxin?</span>
+          <div class="window-unusualcase_button">Создать</div>
+        </div>
+      </div>
+      <!--  finish Sign In Section -->
+
+      <!--  start Sign Up section -->
+      <div class="main-window signup">
+        <span class="window-close_cross">.</span>
+        <h4 class="window_header">Регистрация аккаунта</h4>
+        <input
+          type="text"
+          id="index_signup_name"
+          class="input_data"
+          placeholder="Имя"
+        />
+        <input
+          type="text"
+          id="index_signup_surname"
+          class="input_data"
+          placeholder="Фамилия"
+        />
+        <label>
+          <input type="radio" name="gender" id="male" />
+        </label>
+        <label>
+          <input type="radio" name="gender" id="female" />
+        </label>
+        <label for="guestCount">
+          ДАТА РОЖДЕНИЯ
           <input
-            type="text"
-            id="index_signup_login"
-            class="signin-data_input"
-            placeholder="Email"
+            id="index_signup_bday"
+            class="window-dropdown"
+            placeholder="ДД.ММ.ГГГГ"
           />
         </label>
         <label for="index_signin_password">
+          ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
+          <input
+            type="text"
+            id="index_signup_login"
+            class="input_data"
+            placeholder="Email"
+          />
           <input
             type="password"
             id="index_signin_password"
-            class="signin-data_input"
-            placeholder="Password"
+            class="input_data"
+            placeholder="Пароль"
           />
         </label>
-        <input type="submit" value="Войти" class="sign-data_submit" />
-        <div class="signin-signup_section">
-          <span class="signin-noaccount">Нет аккаунта на Toxin?</span>
-          <div class="signup">Создать</div>
+        <input
+          type="submit"
+          value="Перейти к оплате"
+          class="window-data_submit"
+        />
+        <div class="window-unusualcase_section">
+          <span class="window-unusualcase_text"
+            >Уже есть аккаунт на Toxin?</span
+          >
+          <div class="window-unusualcase_button">Войти</div>
         </div>
       </div>
+      <!--  finish Sign Up Section -->
       <span class="main-bottom_text"
         >Лучшие номера для вашей работы,<br />
         отдыха и просто вдохновения</span
