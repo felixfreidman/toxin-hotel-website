@@ -147,7 +147,7 @@
     <!-- Start Main Section-->
     <div class="main">
       <!-- start Calendar Section -->
-      <div class="main-calendar hide">
+      <div class="main-calendar">
         <h4 class="window_header">
           Найдём номера под<br />
           ваши пожелания
@@ -186,7 +186,6 @@
 
       <!--  start Sign In section -->
       <div class="main-window signin hide">
-        <span class="window-close_cross">.</span>
         <h4 class="window_header">Войти</h4>
         <input
           type="text"
@@ -209,8 +208,7 @@
       <!--  finish Sign In Section -->
 
       <!--  start Sign Up section -->
-      <div class="main-window signup">
-        <span class="window-close_cross">.</span>
+      <div class="main-window signup hide">
         <h4 class="window_header">Регистрация аккаунта</h4>
         <input
           type="text"
@@ -224,13 +222,13 @@
           class="input_data"
           placeholder="Фамилия"
         />
-        <label>
-          <input type="radio" name="gender" id="male" />
-        </label>
-        <label>
+        <div class="main-window_gender">
+          <input type="radio" name="gender" id="male" checked />
+          <label for="male">Мужской</label>
           <input type="radio" name="gender" id="female" />
-        </label>
-        <label for="guestCount">
+          <label for="female">Женский</label>
+        </div>
+        <label for="index_signup_bday">
           ДАТА РОЖДЕНИЯ
           <input
             id="index_signup_bday"
@@ -253,6 +251,10 @@
             placeholder="Пароль"
           />
         </label>
+        <div class="main-window_subscription">
+          <input type="checkbox" id = "subscription_status" checked>
+          <label for="subscription_status">Получать спецпредложения</label>
+        </div>
         <input
           type="submit"
           value="Перейти к оплате"
