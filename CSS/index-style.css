@@ -625,6 +625,68 @@ input[type="checkbox"]:checked+label:after{
 /* end footer-copyrights */
 /* end footer-section */
 
+/* Adaptive MarkUp */
+@media (max-width:1200px) {
+    .header_logo {
+        margin-left: 50px;
+    }
+
+    .header_signup {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:980px) {
+    .header_logo {
+        margin-left: 20px;
+    }
+    .footer-info_text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .footer-column:first-child {
+        margin-left: 100px !important;
+    }
+
+    .footer-column_row {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width:850px) {
+    .footer-copyrights {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .main-bottom_text {
+        display: none;
+    }
+
+    .main {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-calendar {
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
 /* JS helping class */
 
 .hide {
