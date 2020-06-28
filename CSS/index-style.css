@@ -1,4 +1,5 @@
 /*  start header-section */
+
 body {
     font-family: 'Montserrat', sans-serif !important;
 }
@@ -73,20 +74,25 @@ nav {
     margin-right: 140px;
 }
 
+
 /* end header-section */
 
+
 /* start main-section */
+
 .main {
     display: flex;
     justify-content: flex-end;
     max-width: 1440px;
     height: 900px;
     width: 100%;
-    background: url("/IMG/index-backgroundimage.png");
+    background: url("../IMG/index-backgroundimage.png");
     background-size: cover;
 }
 
+
 /* change the layout of main flex when button clicked */
+
 .main_buttonclicked {
     display: flex;
     flex-direction: column;
@@ -99,7 +105,9 @@ nav {
     background-size: cover;
 }
 
+
 /*  start universal styles of windows */
+
 .window_header {
     margin: 0;
     font-style: normal;
@@ -175,8 +183,7 @@ input:hover {
 }
 
 .window-data_submit {
-    background: url("../IMG/index-calendar-findroom_arrow.svg") no-repeat 95% 50%,
-        linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("../IMG/index-calendar-findroom_arrow.svg") no-repeat 95% 50%, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
     font-style: normal;
     font-weight: bold;
@@ -239,6 +246,7 @@ label>input {
     margin-bottom: -5px;
 }
 
+
 /* end universal styles of windows*/
 
 
@@ -264,7 +272,6 @@ label>input {
 }
 
 .calendar-date-space {
-
     display: flex;
     align-content: center;
     justify-content: center;
@@ -310,17 +317,23 @@ label>input {
     background: url("../IMG/index-calendar-findroom_arrow.svg") no-repeat 100% 50%;
 }
 
+
 /* Finish Calendar Section */
 
+
 /* start sign in window */
+
 .signin {
     max-width: 380px;
     max-height: 374px;
 }
 
+
 /* end sign in window */
 
+
 /* begin sign up window */
+
 .signup {
     margin-top: 30px;
     max-width: 380px;
@@ -330,6 +343,8 @@ label>input {
 #index_signup_surname {
     margin-bottom: 0;
 }
+
+
 /* start radioB customization */
 
 .main-window_gender {
@@ -347,7 +362,7 @@ input[type="radio"] {
     visibility: hidden;
 }
 
-input[type="radio"]+label{
+input[type="radio"]+label {
     display: inline-block;
     position: relative;
     padding-left: 5px;
@@ -355,7 +370,7 @@ input[type="radio"]+label{
     cursor: pointer;
 }
 
-input[type="radio"]+label:before{
+input[type="radio"]+label:before {
     content: "";
     position: absolute;
     left: -18px;
@@ -367,17 +382,17 @@ input[type="radio"]+label:before{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
+
 input[type="radio"]:not(:checked)+label:before {
     border: 1px solid #ccc;
 }
 
-input[type="radio"]+label:before{
+input[type="radio"]+label:before {
     border-radius: 100%;
 }
 
-input[type="radio"]+label:after{
+input[type="radio"]+label:after {
     content: "";
     position: absolute;
     -webkit-transition: all 0.2s ease;
@@ -386,7 +401,7 @@ input[type="radio"]+label:after{
     transition: all 0.2s ease;
 }
 
-input[type="radio"]+label:after{
+input[type="radio"]+label:after {
     left: -14px;
     top: 4px;
     width: 10px;
@@ -402,9 +417,13 @@ input[type="radio"]:not(:checked)+label:after {
 input[type="radio"]:checked+label:after {
     opacity: 1;
 }
+
+
 /* end radioB customization */
 
+
 /* start checkbox customization */
+
 .main-window_subscription {
     max-width: 320px;
     max-height: 25px;
@@ -413,7 +432,7 @@ input[type="radio"]:checked+label:after {
     margin-top: -20px;
 }
 
-.main-window_subscription > label {
+.main-window_subscription>label {
     margin: 0;
 }
 
@@ -422,13 +441,12 @@ input[type="checkbox"]:not(:checked) {
     visibility: hidden;
 }
 
-input[type="checkbox"]+label{
+input[type="checkbox"]+label {
     position: relative;
     padding-left: 25px;
     padding-top: 2px;
     cursor: pointer;
 }
-
 
 input[type="checkbox"]+label:before {
     content: "";
@@ -464,7 +482,6 @@ input[type="checkbox"]:checked+label:before {
     justify-content: center;
 }
 
-
 input[type="checkbox"]+label:after {
     content: "";
     position: absolute;
@@ -473,6 +490,7 @@ input[type="checkbox"]+label:after {
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
+
 input[type="checkbox"]:not(:checked)+label:after {
     left: -15px;
     top: 4px;
@@ -481,7 +499,8 @@ input[type="checkbox"]:not(:checked)+label:after {
     border-radius: 100%;
     background-color: #ccc;
 }
-input[type="checkbox"]:checked+label:after{
+
+input[type="checkbox"]:checked+label:after {
     left: -15px;
     top: 4px;
     width: 10px;
@@ -490,7 +509,11 @@ input[type="checkbox"]:checked+label:after{
     transform: translateX(215%);
     background-color: #BC9CFF;
 }
+
+
 /* end checkbox customization */
+
+
 /* end sign up window */
 
 .main-bottom_text {
@@ -506,8 +529,13 @@ input[type="checkbox"]:checked+label:after{
     color: rgba(31, 32, 65, 0.75);
 }
 
+
 /* end main-section */
+
+
 /* start footer-section */
+
+
 /* start footer-info */
 
 .footer {
@@ -515,6 +543,7 @@ input[type="checkbox"]:checked+label:after{
     max-height: 343px;
     padding-top: 104px;
 }
+
 
 /* We need this to flex the "table" */
 
@@ -532,13 +561,17 @@ input[type="checkbox"]:checked+label:after{
     height: 70px;
 }
 
+
 /* Another Hotel Toxin */
+
 .footer_logo {
     max-width: 106px;
     max-height: 40px;
 }
 
+
 /* Cells that have different styles */
+
 .footer-info_text {
     font-style: normal;
     font-weight: normal;
@@ -549,14 +582,18 @@ input[type="checkbox"]:checked+label:after{
     margin-top: 21px;
 }
 
+
 /* Flexing inside each column of the "table" */
+
 .footer-column {
     display: flex;
     flex-direction: column;
     margin-right: 57px;
 }
 
+
 /* Header of "Table"'s column */
+
 .footer-column_header {
     font-style: normal;
     font-weight: bold;
@@ -566,7 +603,9 @@ input[type="checkbox"]:checked+label:after{
     color: #1F2041;
 }
 
+
 /* Each cell in "Table" */
+
 .footer-column_row {
     margin-top: 21px;
     font-style: normal;
@@ -576,7 +615,9 @@ input[type="checkbox"]:checked+label:after{
     color: rgba(31, 32, 65, 0.5);
 }
 
+
 /* Input in the last cell of "Table" to subscribe on emails(Just Decorative) */
+
 .footer-info_input {
     background: url("../IMG/index-input_email-arrow.png") no-repeat 95% 50%;
     font-style: normal;
@@ -593,7 +634,9 @@ input[type="checkbox"]:checked+label:after{
     margin-top: 20px;
 }
 
+
 /* end footer-info */
+
 
 /* start footer-copyrights */
 
@@ -612,7 +655,6 @@ input[type="checkbox"]:checked+label:after{
     font-size: 14px;
     line-height: 17px;
     color: rgba(31, 32, 65, 0.75);
-
 }
 
 .socnet {
@@ -623,14 +665,17 @@ input[type="checkbox"]:checked+label:after{
 
 
 /* end footer-copyrights */
+
+
 /* end footer-section */
 
+
 /* Adaptive MarkUp */
+
 @media (max-width:1200px) {
     .header_logo {
         margin-left: 50px;
     }
-
     .header_signup {
         margin-right: 50px;
     }
@@ -644,16 +689,13 @@ input[type="checkbox"]:checked+label:after{
         font-size: 12px;
         line-height: 16px;
     }
-
     .footer-column:first-child {
         margin-left: 100px !important;
     }
-
     .footer-column_row {
         font-size: 12px;
         line-height: 16px;
     }
-
     nav {
         display: none;
     }
@@ -664,27 +706,155 @@ input[type="checkbox"]:checked+label:after{
         padding-left: 80px;
         padding-right: 80px;
     }
-
     .main-bottom_text {
         display: none;
     }
-
     .main {
         align-items: center;
         justify-content: center;
     }
-
     .main-calendar {
         margin-left: 0;
     }
 }
 
+@media (max-width: 790px) {
+    .footer {
+        max-height: 70px;
+        padding-top: 0;
+    }
+    .footer-info {
+        display: none;
+    }
+}
 
+@media (max-width: 680px) {
+    .footer-copyrights {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .footer-info {
+        display: none;
+    }
+}
 
+@media (max-width: 540px) {
+    .footer-copyrights_text {
+        font-size: 9px;
+    }
+    .header_signin {
+        width: 60px;
+        font-size: 10px;
+    }
+    .header_signup {
+        font-size: 10px;
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        margin-right: 20px;
+    }
+}
 
+@media (max-width: 375px) {
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 650px;
+    }
+    .main-calendar {
+        height: 350px;
+        width: 300px;
+        padding: 40px 20px;
+        margin-top: 140px;
+        margin-bottom: auto;
+    }
+    .window_header {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .header_signin {
+        display: none;
+    }
+    .header_signup {
+        display: none;
+    }
+    .footer {
+        height: 40px;
+    }
+    .footer-copyrights {
+        height: 40px;
+    }
+    .footer-copyrights_text {
+        font-size: 7px;
+    }
+    .socnet {
+        transform: scale(0.6);
+        margin-left: 5px;
+    }
+    .calendar-date {
+        width: 120px;
+    }
+    #departureDate {
+        margin-left: 10px;
+    }
+    .main-calendar_findroom span {
+        background: url(../IMG/index-calendar-findroom_arrow.svg) no-repeat 95% 50%;
+    }
+}
 
+@media (max-width: 330px) {
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 650px;
+    }
+}
 
+@media (max-height: 812px) and (max-width: 375px) {
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 800px;
+    }
+    .main-calendar {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
 
+@media (max-height: 1024px) and (max-width: 768px) {
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1000px;
+    }
+    .main-calendar {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+@media (max-height: 640px) and (max-width: 3608px) {
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+    }
+    .main-calendar {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #departureDate {
+        margin-left: 0;
+    }
+}
 
 
 /* JS helping class */
@@ -692,5 +862,6 @@ input[type="checkbox"]:checked+label:after{
 .hide {
     display: none;
 }
+
 
 /* end css */
