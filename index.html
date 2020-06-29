@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    <link href="../CSS/index-style.css" type="text/css" rel="stylesheet" />
-    <link href="../CSS/normalize.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="../CSS/jquery-ui.min.css">
-    <link rel="stylesheet" href="../CSS/jquery-ui.multidatespicker.css">
+    <link href="CSS/index-style.css" type="text/css" rel="stylesheet" />
+    <link href="CSS/normalize.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/jquery-ui.min.css">
+    <link rel="stylesheet" href="CSS/jquery-ui.multidatespicker.css">
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
     </style>
@@ -21,7 +21,8 @@
     it is easier and will be less difficult to adopt in the nearest future -->
     <!-- Start Hedader with Navigation -->
     <div class="header">
-        <svg class="header_logo" width="106" height="40" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a href="index.html">
+            <svg class="header_logo" width="106" height="40" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M62.335 13.3683C62.5567 13.3683 62.7375 13.4442 62.8775 13.5958C63.0292 13.7358 63.105 13.9167 63.105 14.1383C63.105 14.3483 63.0292 14.5292 62.8775 14.6808C62.7375 14.8325 62.5567 14.9083 62.335 14.9083H58.5725V25.4083C58.5725 25.63 58.4967 25.8167 58.345 25.9683C58.205 26.1083 58.0242 26.1783 57.8025 26.1783C57.5925 26.1783 57.4117 26.1083 57.26 25.9683C57.1083 25.8167 57.0325 25.63 57.0325 25.4083V14.9083H53.27C53.06 14.9083 52.8792 14.8325 52.7275 14.6808C52.5758 14.5292 52.5 14.3483 52.5 14.1383C52.5 13.9167 52.5758 13.7358 52.7275 13.5958C52.8792 13.4442 53.06 13.3683 53.27 13.3683H62.335Z"
           fill="#1F2041"
@@ -89,7 +90,8 @@
             <stop offset="1" stop-color="#8BA4F9" />
           </linearGradient>
         </defs>
-      </svg>
+        </svg>
+        </a>
         <nav>
             <ul class="nav">
                 <li>О нас</li>
@@ -117,11 +119,34 @@
                 </li>
             </ul>
         </nav>
-        <div class="header_signin">Войти</div>
-        <div class="header_signup">Зарегестрироваться</div>
+        <div class="header_more">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </div>
+        <a href="HTML/index-signin.html">
+            <div class="header_signin">Войти</div>
+        </a>
+        <a href="HTML/index-signup.html">
+            <div class="header_signup">Зарегестрироваться</div>
+        </a>
     </div>
     <!-- End Header with Navigation -->
-
+    <div class="mobile_section hide">
+        <a href="HTML/index-signin.html">
+            <div class="mobile_signin">Войти</div>
+        </a>
+        <a href="HTML/index-signup.html">
+            <div class="mobile_signup">Зарегестрироваться</div>
+        </a>
+        <ul>
+            <li>О нас</li>
+            <li>Услуги</li>
+            <li>Вакансии</li>
+            <li>Новости</li>
+            <li>Соглашения</li>
+        </ul>
+    </div>
     <!-- Start Main Section-->
     <div class="main">
         <!-- start Calendar Section -->
@@ -160,68 +185,7 @@
         </label>
         </div>
         <!-- finish Calendar Section -->
-
-        <!--  start Sign In section -->
-        <div class="main-window signin hide">
-            <h4 class="window_header">Войти</h4>
-            <input type="text" id="index_signup_login" class="input_data" placeholder="Email" />
-            <input type="password" id="index_signin_password" class="input_data" placeholder="Пароль" />
-            <input type="submit" value="Войти" class="window-data_submit" />
-            <div class="window-unusualcase_section">
-                <span class="window-unusualcase_text">Нет аккаунта на Toxin?</span>
-                <div class="window-unusualcase_button">Создать</div>
-            </div>
-        </div>
-        <!--  finish Sign In Section -->
-
-        <!--  start Sign Up section -->
-        <div class="main-window signup hide">
-            <h4 class="window_header">Регистрация аккаунта</h4>
-            <input type="text" id="index_signup_name" class="input_data" placeholder="Имя" />
-            <input type="text" id="index_signup_surname" class="input_data" placeholder="Фамилия" />
-            <div class="main-window_gender">
-                <input type="radio" name="gender" id="male" checked />
-                <label for="male">Мужской</label>
-                <input type="radio" name="gender" id="female" />
-                <label for="female">Женский</label>
-            </div>
-            <label for="index_signup_bday">
-          ДАТА РОЖДЕНИЯ
-          <input
-            id="index_signup_bday"
-            class="window-dropdown"
-            placeholder="ДД.ММ.ГГГГ"
-          />
-        </label>
-            <label for="index_signin_password">
-          ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
-          <input
-            type="text"
-            id="index_signup_login"
-            class="input_data"
-            placeholder="Email"
-          />
-          <input
-            type="password"
-            id="index_signin_password"
-            class="input_data"
-            placeholder="Пароль"
-          />
-        </label>
-            <div class="main-window_subscription">
-                <input type="checkbox" id="subscription_status" checked>
-                <label for="subscription_status">Получать спецпредложения</label>
-            </div>
-            <input type="submit" value="Перейти к оплате" class="window-data_submit" />
-            <div class="window-unusualcase_section">
-                <span class="window-unusualcase_text">Уже есть аккаунт на Toxin?</span
-          >
-          <div class="window-unusualcase_button">Войти</div>
-        </div>
-      </div>
-      <!--  finish Sign Up Section -->
-      <span class="main-bottom_text"
-        >Лучшие номера для вашей работы,<br />
+        <span class="main-bottom_text">Лучшие номера для вашей работы,<br />
         отдыха и просто вдохновения</span
       >
     </div>
@@ -313,44 +277,44 @@
             >Бронирование номеров в лучшем <br />отеле 2019 года по версии<br />
             ассоциации «Отельные взгляды»
           </span>
-            </div>
-            <!-- Second Column -->
-            <div class="footer-column">
-                <span class="footer-column_header">Навигация</span>
-                <span class="footer-column_row">О нас</span>
-                <span class="footer-column_row">Новости</span>
-                <span class="footer-column_row">Служба поддержки</span>
-                <span class="footer-column_row">Услуги</span>
-            </div>
-            <!-- Third Column -->
-            <div class="footer-column">
-                <span class="footer-column_header">О нас</span>
-                <span class="footer-column_row">О сервисе</span>
-                <span class="footer-column_row">Наша команда</span>
-                <span class="footer-column_row">Вакансии</span>
-                <span class="footer-column_row">Инвесторы</span>
-            </div>
-            <!-- Fourth Column -->
-            <div class="footer-column">
-                <span class="footer-column_header">Служба поддержки</span>
-                <span class="footer-column_row">Соглашения</span>
-                <span class="footer-column_row">Сообщества</span>
-                <span class="footer-column_row">Связь с нами</span>
-            </div>
-            <!-- Fifth Column -->
-            <div class="footer-column">
-                <span class="footer-column_header">Подписка</span>
-                <span class="footer-info_text">
+    </div>
+    <!-- Second Column -->
+    <div class="footer-column">
+        <span class="footer-column_header">Навигация</span>
+        <span class="footer-column_row">О нас</span>
+        <span class="footer-column_row">Новости</span>
+        <span class="footer-column_row">Служба поддержки</span>
+        <span class="footer-column_row">Услуги</span>
+    </div>
+    <!-- Third Column -->
+    <div class="footer-column">
+        <span class="footer-column_header">О нас</span>
+        <span class="footer-column_row">О сервисе</span>
+        <span class="footer-column_row">Наша команда</span>
+        <span class="footer-column_row">Вакансии</span>
+        <span class="footer-column_row">Инвесторы</span>
+    </div>
+    <!-- Fourth Column -->
+    <div class="footer-column">
+        <span class="footer-column_header">Служба поддержки</span>
+        <span class="footer-column_row">Соглашения</span>
+        <span class="footer-column_row">Сообщества</span>
+        <span class="footer-column_row">Связь с нами</span>
+    </div>
+    <!-- Fifth Column -->
+    <div class="footer-column">
+        <span class="footer-column_header">Подписка</span>
+        <span class="footer-info_text">
             Получайте специальные <br />предложения и новости сервиса
           </span>
-                <input placeholder="Email" class="footer-info_input" type="email" />
-            </div>
-        </div>
-        <!-- End Footer "Table" -->
-        <!-- End Footer Info Section -->
-        <!-- Start Foooter CopyR Section -->
-        <div class="footer-copyrights">
-            <span class="footer-copyrights_text">Copyright © 2018 Toxin отель. Все права зачищены.</span
+        <input placeholder="Email" class="footer-info_input" type="email" />
+    </div>
+    </div>
+    <!-- End Footer "Table" -->
+    <!-- End Footer Info Section -->
+    <!-- Start Foooter CopyR Section -->
+    <div class="footer-copyrights">
+        <span class="footer-copyrights_text">Copyright © 2018 Toxin отель. Все права зачищены.</span
         >
         <div class="footer_copyrights_socnet">
           <svg
@@ -436,9 +400,9 @@
       <!-- End Footer CopyR section -->
     </div>
     <!-- End Footer Info Section -->
-    <script src="../JS/jquery-3.5.1.min.js"></script>
-    <script src="../JS/jquery-ui.min.js"></script>
-    <script src="../JS/jquery-ui.multidatespicker.js"></script>
-    <script src="../JS/index-script.js"></script>
+    <script src="JS/jquery-3.5.1.min.js"></script>
+    <script src="JS/jquery-ui.min.js"></script>
+    <script src="JS/jquery-ui.multidatespicker.js"></script>
+    <script src="JS/index-script.js"></script>
   </body>
 </html>
