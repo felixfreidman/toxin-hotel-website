@@ -60,6 +60,10 @@ nav {
     font-weight: bold;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .header_signup {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
@@ -74,8 +78,94 @@ nav {
     margin-right: 140px;
 }
 
+.header_more {
+    width: 34px;
+    height: 34px;
+    border: 3px solid #BC9CFF;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.burger-line {
+    height: 2px;
+    width: 12px;
+    background-color: #BC9CFF;
+    border-radius: 5px;
+}
+
+.burger-line:first-child,
+.burger-line:nth-child(2) {
+    margin-bottom: 4px;
+}
+
 
 /* end header-section */
+
+
+/* start mobile section */
+
+.mobile_section {
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile_signin {
+    color: #BC9CFF;
+    border: 3px solid #BC9CFF;
+    border-radius: 22px;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    max-width: 87px;
+    max-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.mobile_signup {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    max-width: 196px;
+    max-height: 34px;
+    padding: 9px 20px 10px 19px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.mobile_section ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+.mobile_section li {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+/* end mobile section */
 
 
 /* start main-section */
@@ -200,6 +290,7 @@ input:hover {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    border: none;
 }
 
 .window-unusualcase_section {
@@ -429,7 +520,7 @@ input[type="radio"]:checked+label:after {
     max-height: 25px;
     width: 100%;
     height: 100%;
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 .main-window_subscription>label {
@@ -699,6 +790,17 @@ input[type="checkbox"]:checked+label:after {
     nav {
         display: none;
     }
+    .header_signin {
+        display: none;
+    }
+    .header_signup {
+        display: none;
+    }
+    .header_more {
+        display: flex;
+        margin-left: auto;
+        margin-right: 5%;
+    }
 }
 
 @media (max-width:850px) {
@@ -714,7 +816,9 @@ input[type="checkbox"]:checked+label:after {
         justify-content: center;
     }
     .main-calendar {
-        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px !important;
     }
 }
 
@@ -725,6 +829,9 @@ input[type="checkbox"]:checked+label:after {
     }
     .footer-info {
         display: none;
+    }
+    .main {
+        height: 600px;
     }
 }
 
@@ -742,22 +849,9 @@ input[type="checkbox"]:checked+label:after {
     .footer-copyrights_text {
         font-size: 9px;
     }
-    .header_signin {
-        width: 60px;
-        font-size: 10px;
-    }
-    .header_signup {
-        font-size: 10px;
-        width: 160px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 20px;
-        margin-right: 20px;
-    }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
     .main {
         display: flex;
         align-items: center;
@@ -774,12 +868,6 @@ input[type="checkbox"]:checked+label:after {
     .window_header {
         font-size: 16px;
         line-height: 20px;
-    }
-    .header_signin {
-        display: none;
-    }
-    .header_signup {
-        display: none;
     }
     .footer {
         height: 40px;
@@ -802,6 +890,9 @@ input[type="checkbox"]:checked+label:after {
     }
     .main-calendar_findroom span {
         background: url(../IMG/index-calendar-findroom_arrow.svg) no-repeat 95% 50%;
+    }
+    .header_more {
+        margin-right: 20px;
     }
 }
 

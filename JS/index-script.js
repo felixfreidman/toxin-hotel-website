@@ -1,29 +1,20 @@
 let mainSection = document.querySelector('.main');
-let signInButton = document.querySelector('.header_signin');
-let signUpButton = document.querySelector('.header_signup');
-let mainSectionText = document.querySelector('.main-bottom_text');
-let calendarSection = document.querySelector('.main-calendar');
-let signInSection = document.querySelector('.signin');
-let signUpSection = document.querySelector('.signup');
+let mainSectionOther = document.querySelector('.main_buttonclicked');
+let footerSection = document.querySelector('.footer');
+let mobileSection = document.querySelector('.mobile_section');
+let burgerMenu = document.querySelector('.header_more');
 
-signInButton.addEventListener('click', ()=> {
-    mainSection.classList.toggle('main');
-    mainSection.classList.toggle('main_buttonclicked');
-    calendarSection.classList.toggle('hide');
-    signInSection.classList.toggle('hide');
-    mainSectionText.classList.toggle('hide');
-    if(!signUpSection.classList.contains('hide')){
-        console.log(signUpSection.classList.contains('hide'));
-        signUpSection.classList.toggle('hide');
+
+burgerMenu.addEventListener('click', () => {
+    if (mainSection === null) {
+        footerSection.classList.toggle('hide');
+        mobileSection.classList.toggle('hide');
+        mainSectionOther.classList.toggle('hide');
+    } else {
+        mainSection.classList.toggle('hide');
+        footerSection.classList.toggle('hide');
+        mobileSection.classList.toggle('hide');
     }
+
+
 });
-signUpButton.addEventListener('click', ()=> {
-    mainSection.classList.toggle('main');
-    mainSection.classList.toggle('main_buttonclicked');
-    calendarSection.classList.toggle('hide');
-    signUpSection.classList.toggle('hide');
-    mainSectionText.classList.toggle('hide');
-});
-
-
-
