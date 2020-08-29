@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    <link href="CSS/index-style.css" type="text/css" rel="stylesheet" />
-    <link href="CSS/normalize.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="CSS/jquery-ui.min.css">
-    <link rel="stylesheet" href="CSS/jquery-ui.multidatespicker.css">
+    <link href="../CSS/index-style.css" type="text/css" rel="stylesheet" />
+    <link href="../CSS/normalize.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/jquery-ui.multidatespicker.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/search_room.css " type="text/css">
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
     </style>
@@ -21,7 +22,7 @@
     it is easier and will be less difficult to adopt in the nearest future -->
     <!-- Start Hedader with Navigation -->
     <div class="header">
-        <a href="index.html">
+        <a href="../index.html">
             <svg class="header_logo" width="106" height="40" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M62.335 13.3683C62.5567 13.3683 62.7375 13.4442 62.8775 13.5958C63.0292 13.7358 63.105 13.9167 63.105 14.1383C63.105 14.3483 63.0292 14.5292 62.8775 14.6808C62.7375 14.8325 62.5567 14.9083 62.335 14.9083H58.5725V25.4083C58.5725 25.63 58.4967 25.8167 58.345 25.9683C58.205 26.1083 58.0242 26.1783 57.8025 26.1783C57.5925 26.1783 57.4117 26.1083 57.26 25.9683C57.1083 25.8167 57.0325 25.63 57.0325 25.4083V14.9083H53.27C53.06 14.9083 52.8792 14.8325 52.7275 14.6808C52.5758 14.5292 52.5 14.3483 52.5 14.1383C52.5 13.9167 52.5758 13.7358 52.7275 13.5958C52.8792 13.4442 53.06 13.3683 53.27 13.3683H62.335Z"
@@ -124,10 +125,10 @@
             <span class="burger-line"></span>
             <span class="burger-line"></span>
         </div>
-        <a href="HTML/index-signin.html">
+        <a href="index-signin.html">
             <div class="header_signin">Войти</div>
         </a>
-        <a href="HTML/index-signup.html">
+        <a href="index-signup.html">
             <div class="header_signup">Зарегестрироваться</div>
         </a>
     </div>
@@ -148,63 +149,68 @@
         </ul>
     </div>
     <!-- Start Main Section-->
-    <div class="main">
-        <!-- start Calendar Section -->
-        <div class="main-calendar">
-            <h4 class="window_header">
-                Найдём номера под<br /> ваши пожелания
-            </h4>
-            <div class="calendar-date-space">
-                <label for="arrivalDate">
-            Прибытие
-            <input
-              id="arrivalDate"
-              class="calendar-date"
-              placeholder="ДД.ММ.ГГГГ"
-            />
-          </label>
-                <label for="departureDate" class="departureDateLabel">
-            Выезд
-            <input
-              id="departureDate"
-              class="calendar-date"
-              placeholder="ДД.ММ.ГГГГ"
-            />
-          </label>
-            </div>
-            <label for="guestCount">
-          Гости
-          <input
-            id="guestCount"
-            class="window-dropdown"
-            placeholder="Сколько гостей"
-          />
-          <a href="/HTML/searchroom.html"> <div class="main-calendar_findroom">
-            <span>Подобрать номер</span>
-          </div></a>
-        </label>
+    <div class="mainSearch">
+        <div class="main_sidebar">
+            <label for="stayingPeriod">
+                Дата пребывания в отеле
+                <input
+                  id="stayingPeriod"
+                  class="calendar-date"
+                  placeholder="ДД.ММ.ГГГГ"
+                />
+            </label>
+            <label for="stayingGuests">
+                Гости
+                <input
+                  id="stayingGuests"
+                  class="calendar-date"
+                  placeholder="ДД.ММ.ГГГГ"
+                />
+            </label>
+            <label class="option_header">
+                Опции
+                <label class="container">Можно курить
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+
+            <label class="container">Можно с питомцами
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+
+            <label class="container">Можно пригласить гостей<br>
+                (до 10 человек)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </label>
+            <label class="option_header">
+                Доступность
+                <label class="container">Широкий коридор
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+
+            <label class="container">Помощник для инвалидов
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </label>
+
+
         </div>
-        <!-- finish Calendar Section -->
-        <span class="main-bottom_text">Лучшие номера для вашей работы,<br />
-        отдыха и просто вдохновения</span
-      >
+        <div class="maim_content"></div>
     </div>
     <!-- End Main Section -->
     <!-- Start Footer Section -->
     <!-- Start Footer Info Section -->
     <div class="footer">
-      <div class="footer-info">
-        <!-- Start Footer "Table" -->
-        <!-- First Column -->
-        <div class="footer-column" style="margin-left: 140px;">
-          <svg
-            class="footer_logo"
-            width="106"
-            height="40"
-            viewBox="0 0 106 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <div class="footer-info">
+            <!-- Start Footer "Table" -->
+            <!-- First Column -->
+            <div class="footer-column" style="margin-left: 140px;">
+                <svg class="footer_logo" width="106" height="40" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M62.335 13.3683C62.5567 13.3683 62.7375 13.4441 62.8775 13.5958C63.0292 13.7358 63.105 13.9166 63.105 14.1383C63.105 14.3483 63.0292 14.5291 62.8775 14.6808C62.7375 14.8325 62.5567 14.9083 62.335 14.9083H58.5725V25.4083C58.5725 25.63 58.4967 25.8166 58.345 25.9683C58.205 26.1083 58.0242 26.1783 57.8025 26.1783C57.5925 26.1783 57.4117 26.1083 57.26 25.9683C57.1083 25.8166 57.0325 25.63 57.0325 25.4083V14.9083H53.27C53.06 14.9083 52.8792 14.8325 52.7275 14.6808C52.5758 14.5291 52.5 14.3483 52.5 14.1383C52.5 13.9166 52.5758 13.7358 52.7275 13.5958C52.8792 13.4441 53.06 13.3683 53.27 13.3683H62.335Z"
               fill="#1F2041"
@@ -273,48 +279,47 @@
               </linearGradient>
             </defs>
           </svg>
-          <span class="footer-info_text"
-            >Бронирование номеров в лучшем <br />отеле 2019 года по версии<br />
+                <span class="footer-info_text">Бронирование номеров в лучшем <br />отеле 2019 года по версии<br />
             ассоциации «Отельные взгляды»
           </span>
-    </div>
-    <!-- Second Column -->
-    <div class="footer-column">
-        <span class="footer-column_header">Навигация</span>
-        <span class="footer-column_row">О нас</span>
-        <span class="footer-column_row">Новости</span>
-        <span class="footer-column_row">Служба поддержки</span>
-        <span class="footer-column_row">Услуги</span>
-    </div>
-    <!-- Third Column -->
-    <div class="footer-column">
-        <span class="footer-column_header">О нас</span>
-        <span class="footer-column_row">О сервисе</span>
-        <span class="footer-column_row">Наша команда</span>
-        <span class="footer-column_row">Вакансии</span>
-        <span class="footer-column_row">Инвесторы</span>
-    </div>
-    <!-- Fourth Column -->
-    <div class="footer-column">
-        <span class="footer-column_header">Служба поддержки</span>
-        <span class="footer-column_row">Соглашения</span>
-        <span class="footer-column_row">Сообщества</span>
-        <span class="footer-column_row">Связь с нами</span>
-    </div>
-    <!-- Fifth Column -->
-    <div class="footer-column">
-        <span class="footer-column_header">Подписка</span>
-        <span class="footer-info_text">
+            </div>
+            <!-- Second Column -->
+            <div class="footer-column">
+                <span class="footer-column_header">Навигация</span>
+                <span class="footer-column_row">О нас</span>
+                <span class="footer-column_row">Новости</span>
+                <span class="footer-column_row">Служба поддержки</span>
+                <span class="footer-column_row">Услуги</span>
+            </div>
+            <!-- Third Column -->
+            <div class="footer-column">
+                <span class="footer-column_header">О нас</span>
+                <span class="footer-column_row">О сервисе</span>
+                <span class="footer-column_row">Наша команда</span>
+                <span class="footer-column_row">Вакансии</span>
+                <span class="footer-column_row">Инвесторы</span>
+            </div>
+            <!-- Fourth Column -->
+            <div class="footer-column">
+                <span class="footer-column_header">Служба поддержки</span>
+                <span class="footer-column_row">Соглашения</span>
+                <span class="footer-column_row">Сообщества</span>
+                <span class="footer-column_row">Связь с нами</span>
+            </div>
+            <!-- Fifth Column -->
+            <div class="footer-column">
+                <span class="footer-column_header">Подписка</span>
+                <span class="footer-info_text">
             Получайте специальные <br />предложения и новости сервиса
           </span>
-        <input placeholder="Email" class="footer-info_input" type="email" />
-    </div>
-    </div>
-    <!-- End Footer "Table" -->
-    <!-- End Footer Info Section -->
-    <!-- Start Foooter CopyR Section -->
-    <div class="footer-copyrights">
-        <span class="footer-copyrights_text">Copyright © 2018 Toxin отель. Все права зачищены.</span
+                <input placeholder="Email" class="footer-info_input" type="email" />
+            </div>
+        </div>
+        <!-- End Footer "Table" -->
+        <!-- End Footer Info Section -->
+        <!-- Start Foooter CopyR Section -->
+        <div class="footer-copyrights">
+            <span class="footer-copyrights_text">Copyright © 2018 Toxin отель. Все права зачищены.</span
         >
         <div class="footer_copyrights_socnet">
           <svg
