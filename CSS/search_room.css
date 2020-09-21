@@ -8,7 +8,7 @@
 }
 /* Begin of sidebar section */
 .main_sidebar {
-  width: 30%;
+  width: 33%;
   height: 100%;
   background-color: #fff;
   display: flex;
@@ -25,6 +25,10 @@ label {
   padding-bottom: 10px;
 }
 
+.calendar-date {
+  max-width: 266px !important;
+  max-height: 44px !important;
+}
 /* Customize the label (the container) */
 
 .container {
@@ -112,7 +116,8 @@ label {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-
+  margin-top: 30px;
+  margin-left: 10px;
   color: #1f2041;
 }
 /* using grid I marked up the whole room section */
@@ -245,5 +250,15 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.main_page-description {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  align-self: center;
 }
 /* end Page Counter Section */
