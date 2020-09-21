@@ -1,122 +1,221 @@
 .mainSearch {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1440px;
-    height: 900px;
-    width: 100%;
-    background-size: cover;
-    padding: 70px 0px;
+  display: flex;
+  max-width: 1440px;
+  height: fit-content;
+  width: 100%;
+  background-size: cover;
+  padding: 70px 0px;
 }
-
+/* Begin of sidebar section */
 .main_sidebar {
-    width: 30%;
-    height: 100%;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
 }
 
 label {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
 }
-
 
 /* Customize the label (the container) */
 
 .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    margin-bottom: 5px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 5px;
 }
 
 .container:first-of-type {
-    margin-top: 10px;
+  margin-top: 10px;
 }
-
 
 /* Hide the browser's default checkbox */
 
 .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
-
 
 /* Create a custom checkbox */
 
 .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #fff;
-    border: 2px solid #BC9CFF;
-    border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 2px solid #bc9cff;
+  border-radius: 5px;
 }
-
 
 /* On mouse-over, add a grey background color */
 
-.container:hover input~.checkmark {
-    background-color: #ccc;
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
 }
-
 
 /* When the checkbox is checked, add a blue background */
 
-.container input:checked~.checkmark {
-    background-color: #fff;
+.container input:checked ~ .checkmark {
+  background-color: #fff;
 }
-
 
 /* Create the checkmark/indicator (hidden when not checked) */
 
 .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+  content: "";
+  position: absolute;
+  display: none;
 }
-
 
 /* Show the checkmark when checked */
 
-.container input:checked~.checkmark:after {
-    display: block;
+.container input:checked ~ .checkmark:after {
+  display: block;
 }
-
 
 /* Style the checkmark/indicator */
 
 .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid #BC9CFF;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #bc9cff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
+
+/* End of sidebar section */
+/* main_content aligned the main section with Header->Room Info->Page Counter */
+.main_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_header {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #1f2041;
+}
+/* using grid I marked up the whole room section */
+.room_content {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-template-rows: 24% 24% 24% 24%;
+}
+/* room card with styles */
+.room {
+  width: 270px;
+  height: 257px;
+  margin: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+/* the whole room info after picture */
+.more_room {
+  padding: 20px;
+}
+/* first row after picture with information about room */
+.about-room {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+  padding-bottom: 10px;
+}
+.room_number {
+  margin-right: 22px;
+}
+
+.number {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.sign {
+  color: #bc9cff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.price {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.per_day {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+/* different styles to customize room number and price */
+
+/* second row after picture with information about room */
+.feedback-room {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.feedback_stars {
+  margin-right: 12px;
+}
+.feedback-amount {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.feedback-room {
+  display: flex;
+  flex-direction: row;
+}
+
+.feedback_info {
+  padding-top: 2px;
+}
+
+.feedback {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/* different styles to customize room feedback */
