@@ -1,4 +1,4 @@
-.mainSearch {
+.main-search {
   display: flex;
   max-width: 1440px;
   height: fit-content;
@@ -70,18 +70,6 @@ label {
   background-color: #fff;
   border: 2px solid #bc9cff;
   border-radius: 5px;
-}
-
-/* On mouse-over, add a grey background color */
-
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-
-.container input:checked ~ .checkmark {
-  background-color: #fff;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -219,3 +207,43 @@ label {
 }
 
 /* different styles to customize room feedback */
+
+/* start Page Counter Section */
+.main_page-counter {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 11px;
+  align-self: center;
+}
+
+.first-page {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.usual-page {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-page {
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* end Page Counter Section */
